@@ -5,7 +5,7 @@ import cors from "cors";
 const app = express();
 app.use(cors());
 
-const API_KEY = "7593362a30dd498d8b93239ccdcc541f"; // vamos trocar depois
+const API_KEY = "process.env.FOOTBALL_API_KEY"; // vamos trocar depois
 
 app.get("/live", async (req, res) => {
   try {
